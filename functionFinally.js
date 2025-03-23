@@ -314,19 +314,144 @@ function sequentialSizes(val) {
     case 1:
     case 2:
     case 3:
-      answer = "low";
+      answer = "low";//sober
       break;
     case 4:
     case 5:
     case 6:
-      answer = "mid";
+      answer = "mid";//drunk
       break;
     case 7:
     case 8:
     case 9:
-      answer = "high";
+      answer = "high";//high
       break;
   }
   return answer;
 }
 console.log(sequentialSizes(1));
+//
+function chaintoswitch(val) {
+  var answer = "";
+  switch(val) {
+    case "reimu":
+      answer="hakurei";
+      break;
+      case "marisa":
+      answer="kirisame";
+      break;
+      case "the ice hero":
+      answer="cirno";
+      break;
+  }
+}
+//
+function isless(a,b){
+  return a<b;
+}
+console.log(isless(9,1));
+//
+function abTest (a,b){
+if (a<0 || b<0){
+  return undefined;
+}
+
+
+  return Math.round(Math.pow(Math.sqrt(a)+Math.sqrt(b),2));
+}
+console.log(abTest(2,2));
+//
+var count=0;
+function cc(card){
+  switch(card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      count--;
+      break;
+  }
+  var holdbet = ' Hold '
+  if (count > 0) {
+    holdbet = 'Bet'
+  }
+  return count + " " holdbet;
+}
+cc(2); cc('K'); cc(7); cc('K'); cc('A'); 
+console.log(cc(4))
+//
+var ourDog ={
+  "name": "camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
+
+var mydog ={
+  "name": "doge",
+  "legs": 4,
+  "tails": 1,
+  "friends": [""]
+  
+};
+//
+var testObj= {
+  "hat": "sugar cubes",
+  "shirt": "pink hoddie",
+  "pants": "skirt"
+};
+var hatValue = testObj.hat;
+var shirtValue = testObj.shirt;
+var pantsValue = testObj.pants;
+//
+var testObj = {
+  "an entree":"hamburger",
+  "my side":"veggies",
+  "drink":"water"
+};
+var entreeValue = testObj["an entree"];
+var drinkValue = testObj["drink"];
+//
+var testObj = {
+  12: "Nanamath",
+  16: "Montana",
+  19: "Unidas"
+};
+var playerNumber = 16;
+var player = testObj[playerNumber];
+//
+var mydog = {
+  "name": "Inu",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["none"]
+};
+mydog['bark']='wolf!'
+//
+var mydog = {
+  "name": "Inu",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["none"],
+  "bark": "wolf!"
+};
+delete mydog.tails;
+//
+function phoneticLookup(val){
+  var result = "";
+  var lookup = {
+    "alpha": "Adams",
+    "bravo": "boston"
+  };
+  result=lookup[val];
+  return result;
+}
+console.log(phoneticLookup("alpha"));
