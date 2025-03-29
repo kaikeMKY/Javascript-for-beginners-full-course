@@ -49,7 +49,9 @@ function caseInSwitch(val) {
 
   return answer;
 }
-caseInSwitch(1);
+console.log(caseInSwitch(1));
+
+
 //
 function switchwithstuff(val) {
   var answer = "";
@@ -69,6 +71,8 @@ function switchwithstuff(val) {
   return answer;
 }
 console.log(switchwithstuff("a"));
+
+
 //
 function sequentialSizes(val) {
   var answer = "";
@@ -92,6 +96,8 @@ function sequentialSizes(val) {
   return answer;
 }
 console.log(sequentialSizes(1));
+
+
 //
 function chaintoswitch(val) {
   var answer = "";
@@ -107,11 +113,15 @@ function chaintoswitch(val) {
       break;
   }
 }
+
+
 //
 function isless(a,b){
   return a<b;
 }
-console.log(isless(9,1));
+console.log(isless(9,1));//vai corrigir
+
+
 //
 function abTest (a,b){
 if (a<0 || b<0){
@@ -122,6 +132,8 @@ if (a<0 || b<0){
   return Math.round(Math.pow(Math.sqrt(a)+Math.sqrt(b),2));
 }
 console.log(abTest(2,2));
+
+
 //
 var count=0;
 function cc(card){
@@ -145,11 +157,13 @@ function cc(card){
   if (count > 0) {
     holdbet = 'Bet'
   }
-  return count + " " holdbet;
+  return count + " " + holdbet;
 }
 cc(2); cc('K'); cc(7); cc('K'); cc('A'); 
 console.log(cc(4))
-//
+
+
+//obj
 var ourDog ={
   "name": "camper",
   "legs": 4,
@@ -160,10 +174,12 @@ var ourDog ={
 var mydog ={
   "name": "doge",
   "legs": 4,
-  "tails": 1,
-  "friends": [""]
+  "tails": 3,
+  "friends": [""]//friend less
   
 };
+
+
 //
 var testObj= {
   "hat": "sugar cubes",
@@ -173,6 +189,8 @@ var testObj= {
 var hatValue = testObj.hat;
 var shirtValue = testObj.shirt;
 var pantsValue = testObj.pants;
+
+
 //
 var testObj = {
   "an entree":"hamburger",
@@ -181,6 +199,8 @@ var testObj = {
 };
 var entreeValue = testObj["an entree"];
 var drinkValue = testObj["drink"];
+
+
 //
 var testObj = {
   12: "Nanamath",
@@ -189,6 +209,8 @@ var testObj = {
 };
 var playerNumber = 16;
 var player = testObj[playerNumber];
+
+
 //
 var mydog = {
   "name": "Inu",
@@ -205,7 +227,9 @@ var mydog = {
   "friends": ["none"],
   "bark": "wolf!"
 };
-delete mydog.tails;
+delete mydog.tails;//tailess
+
+
 //
 function phoneticLookup(val){
   var result = "";
@@ -217,6 +241,8 @@ function phoneticLookup(val){
   return result;
 }
 console.log(phoneticLookup("alpha"));
+
+
 //
 var myObj= {
   gift: "pony",
@@ -231,6 +257,8 @@ function checkobj (checkprop){
   }
 }
 console.log(checkobj("gift"));
+
+
 //
 var myMusic=[
   {
@@ -241,6 +269,8 @@ var myMusic=[
     "tohoEuro": "true"
   },
 ]
+
+
 //
 var Mystorage = {
   "car": {
@@ -257,14 +287,15 @@ var gloveboxcontents= Mystorage.car.inside["glovebox"];
 
 console.log(gloveboxcontents)
 
+
 //
 var myplants = [
   {
-    type:"myPlants",
+    type:"small",
     list: [
-      "weed",
-      "zaza",
-      "bonsai"
+      "flower1",
+      "flower2",
+      "flower3"
     ]
   },
   {
@@ -274,6 +305,8 @@ var myplants = [
   }
 ];
 var mymomplants = myplants[1].list[0];
+
+
 //
 var collection ={
   "1919": {
@@ -317,6 +350,8 @@ function updateRecords(id,prop,value) {
 }
 updateRecords( 1919,"tracks","test");
 console.log(updateRecords(2222,"artist",littleV));
+
+
 //
 var myArray = [];
 var i =0;
@@ -325,24 +360,32 @@ while(i<5) {
   i++;
 }
 console.log(myArray);
+
+
 //
 var myArray = [];
 for (var i= 1; i<6; i++){
   myArray.push(i);
 }
 console.log(myArray);
+
+
 //
 var myArray = [];
 for (var i =1; i<10;i+=2) {
   myArray.push(i);
 }
 console.log(myArray);
+
+
 //
 var myArray = [];
 for (var i = 9; i>0; i-=2) {
   myArray.push(i);
 }
 console.log(myArray);
+
+
 //
 var myArr = [2,3,4,5,6];
 var total =0;
@@ -350,6 +393,8 @@ for (var i = 0; i < myArr.length; i++) {
    total+=myArr[i];
 }
 console.log(total);
+
+
 //
 function multiplyall(arr) {
 
@@ -372,6 +417,8 @@ while(i<5){
   i++;
 } while (i<5)
 console.log(i,myArray);
+
+
 //
 var contacts = [
   {
@@ -404,17 +451,23 @@ function lookupprofile(name,prop){
 var data = lookupprofile("henrique,lastname");
 
 console.log(data);
+
+
 //
 function randomFraction(){
   return Math.random();
 }
 console.log(randomFraction());
+
+
 //
 var randomnumberbetween0and19 = Math.floor(Math.random()*20);
 function randomwholenum () {
   return Math.floor(Math.random()*10);
 }
 console.log(randomwholenum());
+
+
 //
 function randomrange(mymin,mymax) {
   return Math.floor(math.random()* (mymax-mymin+1))+ mymin;
@@ -422,16 +475,22 @@ function randomrange(mymin,mymax) {
 }
 var myrandom=randomrange(5,15);
 console.log(myrandom)
+
+
 //
 function converttointerger(str){
    return parseInt(srt);
 }
 converttointerger("56");
+
+
 //
 function converttointerger(str){
   return parseint (str,2)
 }
 converttointerger("10011");
+
+
 //temary
 function checkequal (a,b) {
   return a===b ? true : false;
@@ -439,6 +498,7 @@ function checkequal (a,b) {
   return a === b;
 }
 checkequal(1,2);
+
 
 //
 function checkSign(num) {
@@ -455,6 +515,8 @@ function cattalk() {
   quote =catname + "says meow";
 }
 cattalk();
+
+
 //
 function checkscope (){
   "use strict";
@@ -467,6 +529,8 @@ function checkscope (){
   return i;
 }
 checkscope();
+
+
 //
 function printmanytimes(str) {
   "use strict";
@@ -476,6 +540,8 @@ function printmanytimes(str) {
   }
 }
 printmanytimes("freecodecamp");
+
+
 //
 const s = [5,7,2];
 function editinplace(){
@@ -487,6 +553,8 @@ function editinplace(){
 }
 editinplace();
 console.log(s)
+
+
 //
 function freezeobj(){
   "use strict";
@@ -502,11 +570,17 @@ function freezeobj(){
   return MATH_CONSTANTS.PI;
 }
 const PI = freezeobj();
+
+
 //
 var magic = ()=> new Date();
+
+
 //
 const myconcat =(arr1,arr2)=> arr1.concat(arr2);
 console.log(myconcat([1,2],[3,4,5]));
+
+
 //
 const realNumberArray = [4,5.6,-9.8,3.14,42,6,8.34,-2];
 const squarelist =(arry) => {
@@ -515,6 +589,8 @@ const squarelist =(arry) => {
 };
 const squaredintergers =squarelist(realNumberArray);
 console.log(squaredintergers);
+
+
 //
 const increment = (function(){
   return function increment(number,value = 1  ) {
@@ -523,6 +599,8 @@ const increment = (function(){
 })();
 console.log(increment(5,2));
 console.log(increment(5));
+
+
 //
 const sum =(function(){
  return function sum (...args){
@@ -530,6 +608,8 @@ const sum =(function(){
  };
 })();
 console.log(sum(1,2,3,4));
+
+
 //
 const arr1 =['JAN','FEB','MAR','APR','MAY'];
 let arr2;
@@ -538,13 +618,15 @@ let arr2;
   arr1[0]='potato'
 })();
 console.log(arr2);
+
+
 //
-var voxel =  {x:3.6, y:7.4, z:6.54};
-var x =voxel.x;
-var y =voxel.y;
-var z =voxel.z;
-const {x : a, y : b, z : c} =voxel;
-const AVG_TEMPERATURES ={
+var voxel = {x:3.6, y:7.4, z:6.54 };
+var x = voxel.x;
+var y = voxel.y;
+var z = voxel.z;
+const {x : a, y : b, z : c} = voxel;
+const AVG_TEMPERATURES = {
   today: 77.5,
   tomorrow:79
 };
@@ -554,6 +636,8 @@ function getTempOfTmrw(avgTempetatures) {
    return tempOfTomorrow;
 }
 console.log(getTempOfTmrw(AVG_TEMPERATURES));
+
+
 //
 const LOCAL_FORECAST = {
   today: { min: 72, max:83},
@@ -565,6 +649,8 @@ function getmaxoftmrw(forecast){
   return maxoftomorrow;
 }
 console.log(getmaxoftmrw(LOCAL_FORECAST));
+
+
 //
 const [z,x, ,y]= [1,2,3,4,5,6];
 console.log(z,x,y);
@@ -575,6 +661,8 @@ let a = 8, b = 6;
 })();
 console.log(a);
 console.log(b);
+
+
 //
 const source = [1,2,3,4,5,6,7,8,9,10];
 function removeFirstTwo(list){
@@ -584,6 +672,8 @@ function removeFirstTwo(list){
 const arr = removeFirstTwo(source);
 console.log(arr);
 console.log(source)
+
+
 //
 const stats = {
   max:56.78,
@@ -601,6 +691,8 @@ const half = (function(){
 })(); 
 console.log(stats);
 console.log(half(stats));
+
+
 //
 const person = {
   name: "Zodiac Hasbro",
@@ -622,9 +714,13 @@ function makeList(arr){
 }
 const resultDisplayArray = makeList(result.failure);
 console.log(resultDisplayArray)
+
+
 //
 const createperson = (name,age,gender)=> ({name,age,gender});
 console.log(createPerson("Zodiac Hasbro",56,"male"));
+
+
 //
 const bicycle = {
   gear: 2,
@@ -635,6 +731,8 @@ const bicycle = {
 };
 bicycle.setGear(3);
 console.log(bicycle.gear);
+
+
 //
 class SpaceShuttle {
   constructor(targetPlanet){
@@ -655,12 +753,14 @@ function makeClass() {
 const Vegetable = makeClass();
 const carrot = new Vegetable('carrot');
 console.log(carrot.name);
+
+
 //
 class book{
   constructor(author){
     this._author = author;
   }
-  getwriter(){
+  get writer(){
     return this._author;
   }
   set writer(updateAuthor){
@@ -668,9 +768,9 @@ class book{
   }
 }
 function makeClass(){
-  return Thermostat{
+  return Thermostat {
     constructor(temp);{
-      this._temp = 5/9 *(temp-32);
+      this._temp = 5/9 * (temp-32);
     }
     get tempetature(){
       return this.temp;
