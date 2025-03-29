@@ -1,243 +1,3 @@
-function phrases(myFumo, myYukkuri, MyName) {
-  var result = "halo i am" + myFumo + " and she" + myYukkuri + " " + MyName;
-  return result;
-} //halo i am cirno and she marisa baka it should be it
-
-var array = [0, 1, 2, 3]; // começa pelo 0
-var arrays = ["baka", ["cirno"], "bocchi"];
-var produto = arrays[0]; // should be baka
-
-arrays[2] = reimu; // now instend of bocchi is now reimu desu
-
-var grandeArray = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-];
-var resultante = grandeArray[2][1]; // deve ser 8
-
-arrays.push(["marisa", "sakuya"]); // the arrays should be ["baka",["cirno"],"reimu",["marisa,""sakuya"]]; desune
-
-var thief = arrays.pop(); //should steal marisa,sakuya array i hope so onegashimasu
-
-var strongest = arrays.shift(); //shoul steal cirno and put in var strongest sempre a primeira string do array
-var substutite = arrays.unshift("eirin"); // adiciona no inicio
-
-var compras = [
-  [banana, 1],
-  [tangerina, 9],
-  [chá, 1],
-]; // list
-
-function myreusableFunctionl() {
-  console.log("fumo");
-}
-myreusableFunctionl;
-myreusableFunctionl;
-myreusableFunctionl; //should be fumo fumo fumo
-
-function myreusableFunctionl() {
-  console.log("plushie");
-}
-myreusableFunctionl; //should be fumo fumo fumo plushie
-function args(a, b) {
-  console.log(a - b);
-}
-args(10, 5); //result be 5 a=10 b=5
-
-//global
-var theirfav = "reimu";
-function myfav() {
-  var theirfav = "cirno";
-  return theirfav;
-}
-console.log(myfav()); //valor dentro da função cirno
-console.log(theirfav); //vaalor global reimu
-
-function minusnine(num) {
-  return num - 9;
-}
-console.log(minusnine(10)); // value should be one and works with basic math too
-
-//
-var charged = 0;
-function charged(num) {
-  return (num + 5) / 3;
-}
-charged = change(10); // 10 + 5 / 3
-//adding item
-function nextinline(arr, item) {
-  arr.push("item");
-  return arr.shift();
-}
-
-var testarr = [1, 2, 3, 4, 5];
-console.log("Before: " + JSON.stringify(testarr));
-console.log(nextinline(testarr, 6));
-console.log("After: " + JSON.stringify(testarr));
-//true or false
-function TOF() {
-  return true;
-}
-//Is it true or is it false
-function trueorfalse(isIttrue) {
-  if (isIttrue) {
-    return "true";
-  }
-  return "false";
-}
-console.log(trueorfalse(true));
-//equal
-function testequal(val) {
-  if (val == 12) {
-    return "equal";
-  }
-  return "not equal";
-}
-console.log(testequal(10)); //not equal
-
-//
-function testStrict(val) {
-  if (val) {
-    return "Equal";
-  }
-  return "not equal";
-}
-testStrict(10);
-//
-function compareEquality(a, b) {
-  if (a === b) {
-    return "equal";
-  }
-  return "equal";
-}
-console.log(compareEquality(10, "10")); // not equal because first is a number and second is a string
-
-//
-function testnotequal(val) {
-  if (val != 99) {
-    // see if the value is not 99
-    return "not equal";
-  }
-  return "equal";
-}
-console.log(testnotequal(10));
-//
-function testStrictnotequal(val) {
-  if (val !== 17) {
-    return "not equal";
-  }
-  return "equal";
-}
-console.log(testStrictnotequal(10));
-//
-function testgreaterthan(val) {
-  if (val > 100) return "over 100";
-}
-if (val > 10) {
-  return "10 or under";
-}
-console.log(testgreaterthan(10));
-//
-function testgreaterorequal(val) {
-  if (val >= 20) {
-    return "20 or over";
-  }
-
-  if (val >= 10) {
-    return "10 or over";
-  }
-  return "less than 10";
-}
-console.log(testgreaterorequal(10));
-//
-function testlessthan(val) {
-  if (val < 25) {
-    return "Under 25";
-  }
-  if (val < 55) {
-    return "Under55";
-  }
-  return "55 or Over";
-}
-console.log(testlessthan(10));
-
-//
-function testlessthaorequal(val) {
-  if (val <= 12) {
-    return "smaller than or equal to 12";
-  }
-  if (val <= 24) {
-    return "smaller than or equal to 24";
-  }
-  return "more than 24";
-}
-console.log(testlessthaorequal(10));
-
-//
-function testlogicaland(val) {
-  if (val <= 50 && val >= 25) {
-    return "yes";
-  }
-  return "no";
-}
-testlogicaland(10);
-//
-function testlogicalor(val) {
-  if (val < 10 || val > 20) {
-    return "Outside";
-  }
-  return "insider";
-}
-testlogicalor(15);
-//else
-function testelse(val) {
-  var result = "";
-  if (val > 5) {
-    result = "bigger than 5";
-  } else {
-    result = "5 or smaller";
-  }
-  return result;
-}
-testelse(4);
-
-function testelseif(val) {
-  if (val > 10) {
-    return "greater than 10";
-  } else if (val < 5) {
-    return "smaller than 5";
-  } else {
-    return "between 5 and 10";
-  }
-}
-testelseif(7);
-//
-function ordermylogic(val) {
-  if (val < 5) {
-    return "less than 5";
-  } else if (val < 10) {
-    return "less than 10";
-  } else {
-    return "greater than or equal10";
-  }
-}
-console.log(ordermylogic(3));
-//
-function testsize(num) {
-  if (num < 5) {
-    return "tiny";
-  } else if (num < 10) {
-    return "small";
-  } else if (num < 15) {
-    return "medium";
-  } else if (num < 20) {
-    return "large";
-  } else if (num >= 20) {
-    return "huge";
-  }
-}
-console.log(testsize(7));
 //golf game
 var names = [
   "hole-in-one!",
@@ -267,6 +27,8 @@ function golfscore(par, strokes) {
   return "change me";
 }
 console.log(golfscore(5, 3));
+
+
 //switch stantements
 function caseInSwitch(val) {
   var answer = "";
@@ -563,4 +325,366 @@ while(i<5) {
   i++;
 }
 console.log(myArray);
+//
+var myArray = [];
+for (var i= 1; i<6; i++){
+  myArray.push(i);
+}
+console.log(myArray);
+//
+var myArray = [];
+for (var i =1; i<10;i+=2) {
+  myArray.push(i);
+}
+console.log(myArray);
+//
+var myArray = [];
+for (var i = 9; i>0; i-=2) {
+  myArray.push(i);
+}
+console.log(myArray);
+//
+var myArr = [2,3,4,5,6];
+var total =0;
+for (var i = 0; i < myArr.length; i++) {
+   total+=myArr[i];
+}
+console.log(total);
+//
+function multiplyall(arr) {
+
+  var product= 1;
+  for (var i =0; i < arr.length; i++) {
+     for (var j=0; j < arr[i].length; j++)
+      product*=arr[i][j];
+  }
+  return product;
+}
+ var product = multiplyall([[1,2],[3,4],[5,6,7]]);
+ console.log(product);
+ 
+//
+var myArray= [];
+var i  = 10;
+
+while(i<5){
+  myArray.push(i);
+  i++;
+} while (i<5)
+console.log(i,myArray);
+//
+var contacts = [
+  {
+    "firstName":"kaike",
+    "lastName":"Yamashita",
+    "Number":"123456789",
+    "likes":["touhou","japanese","music"],
+  },
+  {
+    "firstName":"henrique",
+    "lastName":"Yamashita",
+    "Number":"098765432",
+    "likes":["football","gaming","music"],
+  },
+  {
+    "firstName":"somebody",
+    "lastName":"somelastname",
+    "Number":"181919100",
+    "likes":["food","football","music"],
+  },
+];
+function lookupprofile(name,prop){
+  for(var i =0; i < contacts.length; i++) {
+    if (contacts[i].firstName===name){
+      return contacts[i][prop]||"no such property";
+    }
+  }
+  return "No such contact";
+}
+var data = lookupprofile("henrique,lastname");
+
+console.log(data);
+//
+function randomFraction(){
+  return Math.random();
+}
+console.log(randomFraction());
+//
+var randomnumberbetween0and19 = Math.floor(Math.random()*20);
+function randomwholenum () {
+  return Math.floor(Math.random()*10);
+}
+console.log(randomwholenum());
+//
+function randomrange(mymin,mymax) {
+  return Math.floor(math.random()* (mymax-mymin+1))+ mymin;
+
+}
+var myrandom=randomrange(5,15);
+console.log(myrandom)
+//
+function converttointerger(str){
+   return parseInt(srt);
+}
+converttointerger("56");
+//
+function converttointerger(str){
+  return parseint (str,2)
+}
+converttointerger("10011");
+//temary
+function checkequal (a,b) {
+  return a===b ? true : false;
+
+  return a === b;
+}
+checkequal(1,2);
+
+//
+function checkSign(num) {
+ return num > 0 ? "positive" : num < 0 ? "negative" : "zero"
+}
+console.log(checkSign(0));
+let catname = "Quincy";
+let quote;
+catname = "beau";
+
+function cattalk() {
+  "use strict";
+  catname ="oliver";
+  quote =catname + "says meow";
+}
+cattalk();
+//
+function checkscope (){
+  "use strict";
+  let i = "function scope";
+  if (true){
+    let i = "block scope";
+    console.log("block scope i is:",i);
+  }
+  console.log("function scope i is: ",);
+  return i;
+}
+checkscope();
+//
+function printmanytimes(str) {
+  "use strict";
+  const SENTENCE = str + "is cool!";
+  for(let i=0; i <str.lenght; i+=2){
+    console.log(SENTENCE);
+  }
+}
+printmanytimes("freecodecamp");
+//
+const s = [5,7,2];
+function editinplace(){
+  "use strict";
+  //s = [2,5,7];
+  s[0]=2;
+  s[1]=5;
+  s[2]=7;
+}
+editinplace();
+console.log(s)
+//
+function freezeobj(){
+  "use strict";
+  const MATH_CONSTANTS = {
+    PI:3.14
+  };
+  Object.freeze(MATH_CONSTANTS);
+  try{
+    MATH_CONSTANTS.PI = 99;
+  } catch(ex){
+    console.log(ex);
+  }
+  return MATH_CONSTANTS.PI;
+}
+const PI = freezeobj();
+//
+var magic = ()=> new Date();
+//
+const myconcat =(arr1,arr2)=> arr1.concat(arr2);
+console.log(myconcat([1,2],[3,4,5]));
+//
+const realNumberArray = [4,5.6,-9.8,3.14,42,6,8.34,-2];
+const squarelist =(arry) => {
+  const squarelnterger = arr.filter(num=> Number.isInteger(num) && num >0).map(x => x*x);
+  return squaredintergers;
+};
+const squaredintergers =squarelist(realNumberArray);
+console.log(squaredintergers);
+//
+const increment = (function(){
+  return function increment(number,value = 1  ) {
+    return number + value;
+  };
+})();
+console.log(increment(5,2));
+console.log(increment(5));
+//
+const sum =(function(){
+ return function sum (...args){
+  return args.reduce((a,b) => a+b,0);
+ };
+})();
+console.log(sum(1,2,3,4));
+//
+const arr1 =['JAN','FEB','MAR','APR','MAY'];
+let arr2;
+(function(){
+  arr2 = [...arr1];
+  arr1[0]='potato'
+})();
+console.log(arr2);
+//
+var voxel =  {x:3.6, y:7.4, z:6.54};
+var x =voxel.x;
+var y =voxel.y;
+var z =voxel.z;
+const {x : a, y : b, z : c} =voxel;
+const AVG_TEMPERATURES ={
+  today: 77.5,
+  tomorrow:79
+};
+function getTempOfTmrw(avgTempetatures) {
+  "use strict";
+  const { tomorrow : tempOfTomorrow } = avgTempetatures;
+   return tempOfTomorrow;
+}
+console.log(getTempOfTmrw(AVG_TEMPERATURES));
+//
+const LOCAL_FORECAST = {
+  today: { min: 72, max:83},
+  tomorrow:{min:73.3, max:84.6}
+};
+function getmaxoftmrw(forecast){
+  "use strict";
+  const {tomorrow = {max:maxoftomorrow}} = forecast;
+  return maxoftomorrow;
+}
+console.log(getmaxoftmrw(LOCAL_FORECAST));
+//
+const [z,x, ,y]= [1,2,3,4,5,6];
+console.log(z,x,y);
+let a = 8, b = 6;
+(() => {
+  "use strict";
+  [a,b]=[b,a]
+})();
+console.log(a);
+console.log(b);
+//
+const source = [1,2,3,4,5,6,7,8,9,10];
+function removeFirstTwo(list){
+  const[ , , ...arr] = list;
+  return arr;
+}
+const arr = removeFirstTwo(source);
+console.log(arr);
+console.log(source)
+//
+const stats = {
+  max:56.78,
+  standard_deviation:4.34,
+  median:34.54,
+  mode:23.87,
+  min:-0.75,
+  average:35.85
+};
+const half = (function(){
+  return function half({max,min}){
+    return(max +min)/2.0;
+  };
+
+})(); 
+console.log(stats);
+console.log(half(stats));
+//
+const person = {
+  name: "Zodiac Hasbro",
+  age:56
+};
+const greetings = 'Hello my name is ${person.name}!I am ${person.age}years old';
+console.log(greetings);
+const result = {
+  success: ["max-length","no-amd","prefer-arrow-functions"],
+  failure: ["no-var","var-on-top","linebreak"],
+  skipped: ["id-blacklist","no-dup-keys"]
+};
+function makeList(arr){
+  const resultDisplayArray =[];
+  for(let i = 0; i < arr.lenght; i++){
+    resultDisplayArray.push('<li class="text-warning">${arr[i]}</li')
+  }
+  return resultDisplayArray;
+}
+const resultDisplayArray = makeList(result.failure);
+console.log(resultDisplayArray)
+//
+const createperson = (name,age,gender)=> ({name,age,gender});
+console.log(createPerson("Zodiac Hasbro",56,"male"));
+//
+const bicycle = {
+  gear: 2,
+  setGear(newGear){
+    "use strict";
+    this.gear = newGear;
+  }
+};
+bicycle.setGear(3);
+console.log(bicycle.gear);
+//
+class SpaceShuttle {
+  constructor(targetPlanet){
+  this.targetPlanet = targetPlanet;
+}
+}
+var zeus = new SpaceShuttle('jupiter');
+console.log(zeus.targetPlanet)
+
+function makeClass() {
+  class Vegetable {
+    constructor(name){
+      this.name = name;
+    }
+  }
+  return Vegetable;
+}
+const Vegetable = makeClass();
+const carrot = new Vegetable('carrot');
+console.log(carrot.name);
+//
+class book{
+  constructor(author){
+    this._author = author;
+  }
+  getwriter(){
+    return this._author;
+  }
+  set writer(updateAuthor){
+    this._author = updatedAuthor;
+  }
+}
+function makeClass(){
+  return Thermostat{
+    constructor(temp);{
+      this._temp = 5/9 *(temp-32);
+    }
+    get tempetature(){
+      return this.temp;
+    }
+    set tempetature(updateTemp){
+    this._temp = updateTemp;
+    }
+  }
+  return Thermostat;
+}
+const Thermostat = makeClass();
+const thermos = new Thermostat(76);
+let temp = thermos.tempetature;
+thermos.tempetature=26;
+temp = thermos.tempetature;
+console.log(temp);
 //
